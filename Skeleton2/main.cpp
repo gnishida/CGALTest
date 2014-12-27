@@ -1,5 +1,6 @@
 ﻿/**
- * straight skeletonを使って、複雑な（特に凹型）ブロックを区画に分割する。
+ * straight skeletonのサンプル。
+ * 結果を画像に保存。
  *
  * @author Gen Nishida
  * @date 12/27/2014
@@ -30,7 +31,7 @@ int main() {
 	// You can pass the polygon via an iterator pair
 	SsPtr iss = CGAL::create_interior_straight_skeleton_2(poly);
 
-	cv::Mat m(130, 200, CV_8UC3, cv::Scalar(255, 255, 255));
+	cv::Mat m(131, 201, CV_8UC3, cv::Scalar(255, 255, 255));
 
 	for (auto face = iss->faces_begin(); face != iss->faces_end(); ++face) {
 		printf("Face %d:\n", face->id());
@@ -39,12 +40,24 @@ int main() {
 		do {
 			auto head = edge->vertex();
 			auto tail = edge->opposite()->vertex();
-			cv::line(m, cv::Point(tail->point().x(), tail->point().y()), cv::Point(head->point().x(), head->point().y()), cv::Scalar(255, 0, 0), 1);
+
+			cv::Scalar color;
+			if (edge->is_bisector()) {
+				if (edge->is_inner_bisector()) { // 外側に接続されていない分割線
+					color = cv::Scalar(0, 255, 255); // 黄色
+				} else { // 外側と接続されている分割線
+					color = cv::Scalar(255, 0, 0); // 青色
+				}
+			} else { // 一番外側のボーダー
+				color = cv::Scalar(0, 0, 255); // 赤色
+			}
+			cv::line(m, cv::Point(tail->point().x(), tail->point().y()), cv::Point(head->point().x(), head->point().y()), color, 1);
 			printf("(%.1lf, %.1lf) -> (%.1lf, %.1lf) bisector? %d\n", tail->point().x(), tail->point().y(), head->point().x(), head->point().y(), edge->is_bisector());
 		} while ((edge = edge->next()) != edge0);
 		printf("\n");
 	}
 
+	cv::flip(m, m, 0);
 	cv::imwrite("result.png", m);
 
 	return 0;

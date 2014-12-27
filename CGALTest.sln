@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Skeleton", "Skeleton\Skelet
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Skeleton2", "Skeleton2\Skeleton2.vcxproj", "{71451469-3BAD-48AE-B45D-F81263B9C1A3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PolygonSplit", "PolygonSplit\PolygonSplit.vcxproj", "{2CA856E9-7CB2-4BC0-86EE-825E63160E1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -39,6 +41,14 @@ Global
 		{71451469-3BAD-48AE-B45D-F81263B9C1A3}.Release|Win32.Build.0 = Release|Win32
 		{71451469-3BAD-48AE-B45D-F81263B9C1A3}.Release|x64.ActiveCfg = Release|x64
 		{71451469-3BAD-48AE-B45D-F81263B9C1A3}.Release|x64.Build.0 = Release|x64
+		{2CA856E9-7CB2-4BC0-86EE-825E63160E1E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2CA856E9-7CB2-4BC0-86EE-825E63160E1E}.Debug|Win32.Build.0 = Debug|Win32
+		{2CA856E9-7CB2-4BC0-86EE-825E63160E1E}.Debug|x64.ActiveCfg = Debug|x64
+		{2CA856E9-7CB2-4BC0-86EE-825E63160E1E}.Debug|x64.Build.0 = Debug|x64
+		{2CA856E9-7CB2-4BC0-86EE-825E63160E1E}.Release|Win32.ActiveCfg = Release|Win32
+		{2CA856E9-7CB2-4BC0-86EE-825E63160E1E}.Release|Win32.Build.0 = Release|Win32
+		{2CA856E9-7CB2-4BC0-86EE-825E63160E1E}.Release|x64.ActiveCfg = Release|x64
+		{2CA856E9-7CB2-4BC0-86EE-825E63160E1E}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
