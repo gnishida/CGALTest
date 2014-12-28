@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PolygonSplit", "PolygonSpli
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PolygonIntersection", "PolygonIntersecion\PolygonIntersection.vcxproj", "{8DCDF9A0-6D49-46ED-A1E1-A222CEC38ED6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ParcelGeneration", "ParcelGeneration\ParcelGeneration.vcxproj", "{F375AA49-3CFC-4C0B-8FEE-4DBDCA47BCAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -59,6 +61,14 @@ Global
 		{8DCDF9A0-6D49-46ED-A1E1-A222CEC38ED6}.Release|Win32.Build.0 = Release|Win32
 		{8DCDF9A0-6D49-46ED-A1E1-A222CEC38ED6}.Release|x64.ActiveCfg = Release|x64
 		{8DCDF9A0-6D49-46ED-A1E1-A222CEC38ED6}.Release|x64.Build.0 = Release|x64
+		{F375AA49-3CFC-4C0B-8FEE-4DBDCA47BCAC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F375AA49-3CFC-4C0B-8FEE-4DBDCA47BCAC}.Debug|Win32.Build.0 = Debug|Win32
+		{F375AA49-3CFC-4C0B-8FEE-4DBDCA47BCAC}.Debug|x64.ActiveCfg = Debug|x64
+		{F375AA49-3CFC-4C0B-8FEE-4DBDCA47BCAC}.Debug|x64.Build.0 = Debug|x64
+		{F375AA49-3CFC-4C0B-8FEE-4DBDCA47BCAC}.Release|Win32.ActiveCfg = Release|Win32
+		{F375AA49-3CFC-4C0B-8FEE-4DBDCA47BCAC}.Release|Win32.Build.0 = Release|Win32
+		{F375AA49-3CFC-4C0B-8FEE-4DBDCA47BCAC}.Release|x64.ActiveCfg = Release|x64
+		{F375AA49-3CFC-4C0B-8FEE-4DBDCA47BCAC}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
