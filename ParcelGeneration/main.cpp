@@ -1,5 +1,5 @@
 ﻿/**
- * Polygon intersecion
+ * Parcel generation
  *
  * @author Gen Nishida
  * @date 12/27/2014
@@ -19,6 +19,9 @@ typedef Kernel::Point_2 Point_2;
 typedef CGAL::Polygon_2<Kernel> Polygon_2;
 typedef CGAL::Polygon_with_holes_2<Kernel> Polygon_with_holes_2;
 typedef std::list<Polygon_with_holes_2> Pwh_list_2;
+
+void generateParcel(Polygon_2& polygon) {
+}
 
 int main () {
 	// Construct the two input polygons.
